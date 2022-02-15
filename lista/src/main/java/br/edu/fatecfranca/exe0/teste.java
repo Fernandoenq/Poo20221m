@@ -19,10 +19,7 @@ public class teste {
         // TODO code application logic here
         Carro obj1 = new Carro("Onix", 2019, 0, false);
         
-        obj1.modelo = "Onix";
-        obj1.ano = 2019;
-        obj1.velocidade = 0;
-        obj1.motor = false;
+       
         //chamar os métodos
         obj1.mostrar();
         obj1.ligar();
@@ -34,10 +31,6 @@ public class teste {
         
         Carro obj2 = new Carro("Onix", 2019, 0, false);
         
-        obj2.modelo = "Fusca";
-        obj2.ano = 2000;
-        obj2.velocidade = 0;
-        obj2.motor = false;
         
         //chamar os métodos
         obj2.mostrar();
