@@ -4,6 +4,8 @@
  */
 package br.edu.fatecfranca.exe1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Fernando
@@ -15,7 +17,11 @@ public class TestaAluno {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Aluno obj1 = new Aluno(1, "Fernando", 20, 10, 9);
+        
+        int auxnum = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero do aluno"));
+        String auxnome = JOptionPane.showInputDialog("Informe o nome do aluno");
+        
+        Aluno obj1 = new Aluno(auxnum, "Fernando", 20, 10, 9);
         
         
         obj1.mostrar();

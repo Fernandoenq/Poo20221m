@@ -10,7 +10,7 @@ import javax.swing.JOptionPane; //importando um pacote para usar uma classe
  *
  * @author Fernando
  */
-public class Carro {
+public class Carro { //classe
     
     String modelo;
     int ano;

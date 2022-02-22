@@ -18,10 +18,10 @@ public class Produto {
     public Produto(){
         
     }
-    public Produto(int id, String descrição, int qtde, float proco){
+    public Produto(int id, String descrição, int qtde, float preco){
         this.id = id;
         this.descrição = descrição;
-        this.qtde = quantidade;
+        this.qtde = qtde;
         this.preco = preco;
     }
     

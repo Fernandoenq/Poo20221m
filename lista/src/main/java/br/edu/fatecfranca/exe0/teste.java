@@ -4,6 +4,8 @@
  */
 package br.edu.fatecfranca.exe0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Fernando
@@ -29,7 +31,22 @@ public class teste {
         obj1.frear(10);
         obj1.mostrar();
         
-        Carro obj2 = new Carro("Onix", 2019, 0, false);
+        
+        String auxModelo = JOptionPane.showInputDialog("Informe o modelo");
+        int auxano = Integer.parseInt(JOptionPane.showInputDialog("Informe o ano"));
+        float auxvel = Float.parseFloat(JOptionPane.showInputDialog("Informe a velocidade"));
+        int respostadomotorligado = JOptionPane.showConfirmDialog(null, "O carro esta ligado?");
+        //é criado uma variavel para receber a resposta se o carro ta ligado ou não
+        //a resposta da caixa retorna em INT e com 2 possiveis valores
+        //- JOptionPane.OK_OPTION
+        //- JOptionPane.NO_OPTION
+        boolean auxMotor = (respostadomotorligado == JOptionPane.OK_OPTION);
+        //para transformar a resposta do carro ligado em boolean
+        //vamos criar uma variavel boolean
+        //seu valor vem de uma pergunta
+        //se for OK_OPTION como valor ent será true
+        //se nao será false
+        Carro obj2 = new Carro(auxModelo, auxano, auxvel, auxMotor);
         
         
         //chamar os métodos
