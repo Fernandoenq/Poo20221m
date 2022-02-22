@@ -18,31 +18,31 @@ public class Produto {
     public Produto(){
         
     }
-    public Produto(int ids, String des, int quant, float price){
-        id = ids;
-        descrição = des;
-        qtde = quant;
-        preco = price;
+    public Produto(int id, String descrição, int qtde, float proco){
+        this.id = id;
+        this.descrição = descrição;
+        this.qtde = quantidade;
+        this.preco = preco;
     }
     
     void comprar(int x){
-        qtde += x;
+        this.qtde += x;
     }
     
     void vender(int x){
-        qtde -= x;
+        this.qtde -= x;
     }
     
     void subir(float x){
-        preco += x;
+        this.preco += x;
     }
     
     void descer(float x){
-        preco -= x;
+        this.preco -= x;
     }
     
     public void mostrar(){
-        System.out.println("Id do produto: " + id + " descrição: " + descrição + " quantidade " + qtde + " preço " + preco);
+        System.out.println(this.preco + "Id do produto: " + this.id + " descrição: " + this.descrição + " quantidade " + this.qtde + " preço ");
 }
     
     
